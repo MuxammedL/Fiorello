@@ -1,0 +1,94 @@
+#contact {
+    padding: 120px 0;
+    .row{
+        .col{
+            &:first-child{
+                padding: 0;
+                @media (min-width:320px) {
+                    padding: 0 12px;
+                }
+            }
+            .contact-card {
+                background-color: #f8f8f8;
+                text-align: center;
+                padding: 50px 9%;
+                .card-img {
+                    margin-bottom: 17px;
+                    img {
+                        width: 154px;
+                        height: 154px;
+                        object-fit: cover;
+                    }
+                }
+                .card-content {
+                    h2 {
+                        margin-bottom: 19px;
+                        span{
+                            color: $primary-color;
+                        }
+                    }
+                    p {
+                        margin-top: 29px;
+                        font-size: 17px;
+                    }
+                }
+                .name-img {
+                    margin: 42px auto 0 auto;
+                    width: 197px;
+                    height: 56px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .contact-form {
+                margin-top: 62px;
+                @media (min-width: 1200px) {
+                    margin-top: 0;
+                    padding: 2px 0 0 35px;
+                }
+                .form-title {
+                    h2 {
+                        margin-bottom: 19px;
+                    }
+                    p {
+                        margin-bottom: 32px;
+                    }
+                }
+                form {
+                    input {
+                        display: block;
+                        width: 100%;
+                        margin: 0 0 15px;
+                        padding: 19px 18px;
+                        color: $light-gray;
+                        font-size: 12px;
+                        background-color: #fff;
+                        border: 1px solid $dark-white;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    textarea {
+                        width: 100%;
+                        height: 130px;
+                        margin: 0 0 15px;
+                        padding: 19px 18px;
+                        color: $light-gray;
+                        font-size: 12px;
+                        background-color: #fff;
+                        border-color: $dark-white;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    button {
+                        @extend %btn; 
+                    }
+                } 
+            }
+        }
+    }
+}
